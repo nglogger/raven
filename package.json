@@ -1,0 +1,71 @@
+{
+  "name": "@nglogger/raven",
+  "version": "0.0.1",
+  "description": "Raven (sentry.io) transport for @nglogger",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "ngc -w",
+    "build": "ngc",
+    "test": "echo 'TODO'",
+    "lint": "tslint -p .",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "prepublish": "in-publish && (npm run lint && npm run build && npm run test) || not-in-publish",
+    "prepush": "npm run prepublish",
+    "precommit": "npm run lint"
+  },
+  "author": {
+    "name": "Aleksandr Krivoshchekov",
+    "email": "SuperPaintmanDeveloper@gmail.com",
+    "url": "https://superpaintman.com/"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/",
+    "!src/"
+  ],
+  "keywords": [
+    "angular",
+    "nglogger",
+    "angular 2",
+    "angular 4",
+    "angular 5",
+    "logger",
+    "log",
+    "ng",
+    "sentry",
+    "sentry.io",
+    "raven",
+    "ravenjs",
+    "raven-js"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/compiler": "5.2.9",
+    "@angular/compiler-cli": "5.2.9",
+    "@angular/core": "5.2.9",
+    "@commitlint/cli": "6.1.3",
+    "@nglogger/core": "0.0.2",
+    "@types/raven-js": "3.10.0",
+    "commitlint-config-pedantic": "0.0.2",
+    "husky": "0.14.3",
+    "in-publish": "2.0.0",
+    "raven-js": "3.24.1",
+    "rxjs": "5.5.8",
+    "tslint": "5.9.1",
+    "tslint-config-pedantic": "0.0.2",
+    "typescript": "2.6.2"
+  },
+  "peerDependencies": {
+    "@angular/core": "^4.0.0 || ^5.0.0",
+    "@nglogger/core": "0.0.5",
+    "raven-js": "^3.0.0",
+    "rxjs": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nglogger/raven.git"
+  }
+}

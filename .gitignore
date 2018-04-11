@@ -1,0 +1,28 @@
+# Git
+.git/
+
+# NPM
+/node_modules/
+
+# Typings
+/typings
+
+# TMP
+/tmp/
+
+# Builds
+/lib
+
+# Tests
+/coverage/
+
+# Logs
+/logs/
+/*.log
+
+# Docs
+/docs/
+/docs-api/
+
+# Config
+/config.yml
